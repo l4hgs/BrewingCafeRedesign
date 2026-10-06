@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brewing Cafe</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/logo-brewery.png">
+    </head>
+    <body>
+        <nav class="navbar" aria-label="Main Navigation">
+                <div class="navbar__logo">
+                    <a href="#hero"><img src="images/logo-brewery.png" alt="Brewing Cafe"></a>
+                </div>
+                <ul class="navbar__links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#visit">Visit Us</a></li>
+                    <li><a href="#inquiry">Contact</a></li>
+                </ul>
+        </nav>
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="hero__content">
+                    <h1>BREWING.<br>SIPPING.<br>RELAXING.</h1>
+                    <p>YOUR NEIGHBORHOOD CAFE FOR FRESHLY BREWED COFFEE, HOMEMADE TREATS, AND GOOD CONVERSATIONS.</p>
+                    
+                    <button class="btn btn--menu"><a href="#menu">Explore Our Menu</a></button>
+
+                </div>
+                <div class="hero__image">
+                    <img src="images/coffee-machine.jpg" alt="Coffee machine">
+                </div>
+            </section>
+
+
+            <!-- About Section -->
+            <section class="about" id="about">
+                <div class="about__content">
+                    <div class="about__container">
+                        <div class="about__image">
+                            <img src="images/counter-image.jpg" alt="Coffee cup and beans">
+                            <img src="images/brewery.jpg" alt="Brewery">
+                            <img src="images/grounds.jpg" alt="Coffee grounds">
+                        </div>
+                        <h2>WHAT WE DO</h2>
+                        <p>Brewing Café was created as a cozy space where people can slow down, enjoy great coffee, and connect with others. We serve freshly brewed coffee, handcrafted drinks, pastries, and light meals prepared with quality ingredients.</p>
+                    </div>
+                </div>                
+            </section>
+
+
+            <!-- Menu Section -->
+            <section class="menu" id="menu">
+                <h2 class="menu-title">Our Menu</h2>
+                <div class="menu__list">
+                    <div class="menu-item">
+                        <h3>Classic Latte</h3>
+                        <img src="images/latte.jpg" alt="Classic Latte">
+                        <p>Espresso Blended with steamed milk.</p>
+                        <p class="price">P140.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Caramel Macchiato</h3>
+                        <img src="images/caramel-macchiato.jpg" alt="Caramel Macchiato">
+                        <p>Espresso, steamed milk, and caramel. </p>
+                        <p class="price">P155.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Spanish Latte</h3>
+                        <img src="images/spanish-latte.jpg" alt="Spanish Latte">
+                        <p>Rich espresso with sweetened milk. </p>
+                        <p class="price">P150.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Matcha Cream Latte</h3>
+                        <img src="images/matcha-latte.jpg" alt="Matcha Cream Latte">
+                        <p>Smooth matcha with creamy milk.</p>
+                        <p class="price">P160.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Chocolate Croissant</h3>
+                        <img src="images/chocolate-croissant.jpg" alt="Chocolate Croissant">
+                        <p>Buttery pastry filled with chocolate.</p>
+                        <p class="price">P120.00</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <h3>Blueberry Cheesecake</h3>
+                        <img src="images/blueberry-cheesecake.jpg" alt="Blueberry Cheesecake">
+                        <p>Creamy cheesecake with blueberry.</p>
+                        <p class="price">P175.00</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features" id="features">
+                <div class="features__container">
+                    <h2>Study Break Special.</h2>
+                    <h2>Study Break Special.</h2>
+                    <h2>Study Break Special.</h2>
+                    <p>Get any regular coffee + pastry for only <span class="price">₱199</span></p>
+                    <a href="#contact">
+                        <button class="btn btn--offer">Grab the Offer</button>
+                    </a> 
+                </div>
+            </section>
+
+            <section class="visit" id="visit">
+                <div class="visit-title">
+                    <h2>Visit Brewing Café</h2>
+                </div>
+                <div class="visit-content">
+                    <h3>Address</h3>
+                    <p class="visit-description">123 University Avenue, Batangas City</p>
+                
+                    <h3>Opening Hours</h3>
+                    <p class="visit-description">Monday – Saturday: 7:00 AM – 9:00 PM</p>
+                    <p class="visit-description">Sunday: 8:00 AM – 6:00 PM</p>
+                
+                    <h3>Contact Information</h3>
+                    <p class="visit-description">Phone: (043) 123-4567</p>
+                    <p class="visit-description">Email: brewingcafe@brewed.caf</p>
+                
+                    <h3>Location</h3>
+                    <p class="visit-description">Brewing Café - 123 University Avenue, Batangas City</p>
+                    
+                </div>
+            </section>
+
+            <section class="inquiry" id="inquiry">
+                <h2>Send Us an Inquiry</h2>
+                        
+                <form class="inquiry__form" action="#" method="POST">
+                    <div class="inquiry__field">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                
+                    <div class="inquiry__field">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                
+                    <div class="inquiry__field">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                
+                    <div class="inquiry__field">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                
+                    <div class="inquiry__submit">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </section>
+            
+        </main>
+
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-col">
+              <h3>Brewing Café</h3>
+              <p>Serving freshly roasted artisan coffee and handcrafted pastries daily in a cozy, minimalist space designed for connection and focus.</p>
+            </div>
+        
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#inquiry">Contact</a></li>
+              </ul>
+            </div>
+        
+            <div class="footer-col">
+              <h4>Contact Information</h4>
+              <p>Brewing Café - 123 University Avenue, Batangas City</p>
+              <p>Email: hello@brewingcafe.com</p>
+              <p>Phone: +1 (555) 123-4567</p>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <p>&copy; 2026 Brewing Café. All Rights Reserved.</p>
+          </div>
+        </footer>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+        <script>
+            //smooth scroll
+            const lenis = new Lenis({
+              duration: 1.2,
+              easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+              smooth: true,
+            });
+        
+            function raf(time) {
+              lenis.raf(time);
+              requestAnimationFrame(raf);
+            }
+        
+            requestAnimationFrame(raf);
+            
+            //animation
+            document.addEventListener("DOMContentLoaded", function () {
+              const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                  } else {
+                    entry.target.classList.remove("is-visible");
+                  }
+                });
+              }, { threshold: 0.2 });
+          
+              document.querySelectorAll(".about__image img").forEach(img => {
+                observer.observe(img);
+              });
+            });
+
+            //smooth nav
+            document.addEventListener("DOMContentLoaded", function () {
+              document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                  e.preventDefault();
+                
+                  const targetId = this.getAttribute("href");
+                  if (targetId === "#") return;
+                  const targetElement = document.querySelector(targetId);
+                
+                  if (targetElement) {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const startPosition = window.pageYOffset;
+                    const distance = targetPosition - startPosition - 80;
+                    const duration = 1200;
+                    let startTime = null;
+
+                    function animation(currentTime) {
+                      if (startTime === null) startTime = currentTime;
+                      const timeElapsed = currentTime - startTime;
+                      const run = ease(timeElapsed, startPosition, distance, duration);
+                      window.scrollTo(0, run);
+                      if (timeElapsed < duration) {
+                        requestAnimationFrame(animation);
+                      }
+                    }
+                
+                    function ease(t, b, c, d) {
+                      t /= d / 2;
+                      if (t < 1) return (c / 2) * t * t + b;
+                      t--;
+                      return (-c / 2) * (t * (t - 2) - 1) + b;
+                    }
+                
+                    requestAnimationFrame(animation);
+                  }
+                });
+              });
+            });
+
+            //nav links
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar li a');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+
+                        navLinks.forEach(link => {
+                            link.classList.remove('active-link');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active-link');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        </script>
+    </body>
+</html>
